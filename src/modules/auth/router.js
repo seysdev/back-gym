@@ -1,4 +1,6 @@
-import { AuthLogin } from "./index";
+import { AuthLogin, AuthRegister } from "./index";
+
+console.log("AuthLogin", AuthLogin);
 
 export const authRouter = [
   {
@@ -8,7 +10,7 @@ export const authRouter = [
   },
   {
     path: "/register",
-    component: () => {},
+    component: <AuthRegister />,
     private: false,
   },
 ];

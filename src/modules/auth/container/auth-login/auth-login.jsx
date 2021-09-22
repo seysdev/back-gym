@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -14,6 +14,11 @@ export function AuthLogin() {
     evt.preventDefault();
     console.log("formState", formState);
   };
+
+  useEffect(() => {
+    // ACA LLAMARAN SERVICIOS
+     
+  }, []);
 
   return (
     <div className="auth-login">

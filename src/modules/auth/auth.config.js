@@ -1,0 +1,3 @@
+const TYPE_USER = [
+    
+]
